@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<!--설정정하기-->
+<head>
+  <meta charset="utf-8">
+  <title>석지니 월드</title>
+  <script>
+  </script>
+  <link rel="stylesheet" href="mystyle.css">
+  <!--internal style-->
+
+  <style>
+    div{background-color: black; color: white;}
+    div>span{background-color: white; color: black;}
+    span{background-color: #7598d1 ; color: rgb(224, 216, 98)}
+
+    input[name=email]{ background-color:gray;color: white;}
+
+    li>span {color:red;}
+
+  </style>
+
+
+</head>
+
+<!--몸체부분시작-->
+<body>
+  <!--제목지정-->
+  <h2 style = "color: rgb(66, 8, 54)">THIS IS 찌니 WORLD</h2>
+
+  <!--사진 누르면 해당 링크로-->
+  <a href="http://www.naver.com">
+  <img src="jin.jpg" alt="there is no picture"
+    width="100%" height="100%">
+  </a>
+
+  <!--내용시작-->
+  <!--선택자 연습-->
+  <div>
+    here <span>is</span>
+  </div>
+  <br />
+  <div >
+    ohuh
+  </div>
+
+  <span>seletor test </span>
+  <form class="" action="index.html" method="post">
+    이름 : <input type="text" name="name" value=""><br />
+    메일 : <input type="text" name="email" value=""><br />
+    <textarea name="email" rows="8" cols="80"></textarea>
+  </form>
+
+  <ul>
+    <li><span>1</span>1</li>
+    <li><span>2</span>2</li>
+    <li><span>3</span>3</li>
+  </ul>
+
+
+
+
+
+  <!--문단시작-->
+  <p>WORLD WIDE HANDSOME</p>
+  <p>김석진. 건국대학교 영화예술학부<br />
+
+  <ul>
+    <li>
+      1992.12.04. 과천 출생
+    </li>
+    <li>
+      2013.06.13. 방탄소년단으로 데뷔
+    </li>
+  </ul>
+
+  </p>
+
+  <!--양식-->
+  <form class="" action="index.html" method="get">
+  TEXT  <input type="text" value="default" name="username"/><br />
+
+  PASSWORD   <input type="password" placeholder="here password" name="userpass"/><br />
+
+  File   <input type="file" name="userpicture"/><br />
+
+  CHECKBOX
+  <input type="checkbox" name="bset1" value="programming"/>1
+  <input type="checkbox" name="best1" value="database"/>2
+  <br />
+
+  RADIO
+  <input type="radio" name="best" value="programming"/>3
+  <input type="radio" name="best" value="database"/>4
+  <br />
+
+  SUBMIT   <input type="submit" value="gogo"/><br />
+
+  RESET   <input type="reset" value="tete"/><br />
+
+  BUTTON   <input type="button" value="click"/><br />
+
+  HIDDEN   <input type="hidden" /><br />
+
+  </form>
+  <!--양식 종료-->
+
+  <!--라벨사용해보기 굳이 입력 범위 지정하지 않아도 보임-->
+  <label for="uname">name</label>
+  <input id="uname" type="text" name="username" value="default">
+
+  <br />
+  <label for="subject">subla</label>
+  <input id="subject" type="checkbox" name="subject" value="sub">
+
+  <br />
+  name2
+  <input type="text" name="toname" value="toname">
+
+  <br /><br />
+  <textarea name="tarea" rows="8" cols="50">기본값을 넣는다.
+  이때 주의 할점은 textarea 태그 내의 영역은 그대로 출력된다. 라인을 넘기면 안됨.
+  </textarea>
+
+
+  <br />
+  subject
+  <select class="" name="subject" size="4" multiple>
+    <option value="programming">programming</option>
+    <option value="database">database</option>
+    <option value="web" selected>web</option>
+  </select>
+  <br />
+
+  <br />
+  <button type="button" name="button">gogori</button>
+
+  <fieldset>
+    <legend>과목</legend>
+    <input type="radio" name="hometupe" value="house" checked> house
+    <input type="radio" name="hometupe" value="out">out
+  </fieldset>
+
+  <!--inline style-->
+  <br />
+  <img src="spring.png" id="a" alt="Can't find image..."style="width:100%">
+  <img src="spring.png" id="b" alt="dd">
+  <br />  <br />  <br />  <br />  <br />  <br />
+  <br />  <br />  <br />  <br />
+
+</body>
+
+</html>
