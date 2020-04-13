@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div{
+        position:fixed;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+      }
+      body > div {
+        position: absolute;
+        left:50px;
+        top:50px;
+        backgrond-color:blue;
+        width:200px;
+        height:200px;
+      }
+      body > div >div {
+        position: absolute;
+        left:50px;
+        top:50px;
+        backgrond-color:red;
+        width:200px;
+        height:200px;
+      }
+      img#first{
+        position: relative;
+        left: 100px;
+        top: 100px;
+        width: 80%;
+        z-index:15;
+      }
+      img#second{
+        position: fixed;
+        left:150px;
+        top: 150px;
+        right: 150px;
+        bottom:150px;
+        width: 80%;
+        z-index:10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="di1">
+      <div class="di2">
+        sdf
+      </div>
+    </div>
+    <img id="first" src="jin.jpg" alt="no pic">
+    <img id="second" src="jin.jpg" alt="no pic">
+    <img id="" src="jin.jpg" alt="no pic">
+    <img id="" src="jin.jpg" alt="no pic">
+    <img id="" src="jin.jpg" alt="no pic">
+  </body>
+</html>

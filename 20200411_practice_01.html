@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(60, 119, 156);
+    }
+
+    ul::before,
+    ul::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    ul,
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      background-color: rgb(147, 198, 26);
+      height: 50;
+    }
+
+    body > ul > li{
+      float: left;
+      width: 100px;
+      height: 46px;
+      line-height: 46px;
+      font-size: 15pt;
+      font-weight: bold;
+      background-color: rgb(19, 130, 97);
+      color: rgb(237, 51, 63);
+      border-left: 5px solid rgb(80, 136, 163);
+      padding-left: 10px;
+    }
+
+    li > ul{
+      background-color: rgb(173, 126, 120);
+      display: none;
+    }
+    li>ul>li{
+      padding-left: 10px;
+      font-size: 15px;
+      font-weight: lighter;
+    }
+    body>ul>li:hover {
+      background-color: rgb(173, 126, 142);
+      cursor: default;
+    }
+    body>ul>li:hover>ul {
+        background-color: rgb(173, 126, 142);
+      display: block;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>
+      회사소개
+      <ul>
+        <li>대표인사말</li>
+        <li>찾아오는길</li>
+      </ul>
+    </li>
+    <li>
+      과정소개
+      <ul>
+        <li>프로그래밍</li>
+        <li>데이터베이스</li>
+        <li>IoT</li>
+      </ul>
+    </li>
+    <li>
+      인증시험
+      <ul>
+        <li>청보처리기사</li>
+        <li>알고리즘</li>
+      </ul>
+    </li>
+    <li>
+      게시판
+      <ul>
+        <li>공지사항</li>
+        <li>묻고답하기</li>
+        <li>Q&amp;A</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
